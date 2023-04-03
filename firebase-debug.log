@@ -1,0 +1,80 @@
+[debug] [2023-04-03T16:44:36.778Z] ----------------------------------------------------------------------
+[debug] [2023-04-03T16:44:36.782Z] Command:       /home/dev/.nvm/versions/node/v18.15.0/bin/node /home/dev/.nvm/versions/node/v18.15.0/bin/firebase emulators:start
+[debug] [2023-04-03T16:44:36.783Z] CLI Version:   11.25.1
+[debug] [2023-04-03T16:44:36.784Z] Platform:      linux
+[debug] [2023-04-03T16:44:36.784Z] Node Version:  v18.15.0
+[debug] [2023-04-03T16:44:36.784Z] Time:          Mon Apr 03 2023 17:44:36 GMT+0100 (Hora padrão da África Ocidental)
+[debug] [2023-04-03T16:44:36.785Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-03T16:44:36.977Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-03T16:44:36.978Z] > authorizing via signed-in user (ecassuente@gmail.com)
+[debug] [2023-04-03T16:44:37.275Z] openjdk version "11.0.18" 2023-01-17
+
+[debug] [2023-04-03T16:44:37.277Z] OpenJDK Runtime Environment (build 11.0.18+10-post-Ubuntu-0ubuntu122.04)
+OpenJDK 64-Bit Server VM (build 11.0.18+10-post-Ubuntu-0ubuntu122.04, mixed mode, sharing)
+
+[debug] [2023-04-03T16:44:37.283Z] Parsed Java major version: 11
+[info] i  emulators: Starting emulators: auth, firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, firestore"}}
+[debug] [2023-04-03T16:44:37.293Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-03T16:44:37.293Z] [auth] Authentication Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-03T16:44:37.293Z] [firestore] Firestore Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-03T16:44:37.293Z] [firestore.websocket] websocket server for firestore only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-04-03T16:44:37.294Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"auth":[{"address":"127.0.0.1","family":"IPv4","port":9099}],"firestore":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"firestore.websocket":[{"address":"127.0.0.1","family":"IPv4","port":9150}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-04-03T16:44:37.312Z] [hub] writing locator at /tmp/hub-beatplace-app.json
+[warn] ⚠  firestore: Cloud Firestore Emulator does not support multiple databases yet. {"metadata":{"emulator":{"name":"firestore"},"message":"Cloud Firestore Emulator does not support multiple databases yet."}}
+[warn] ⚠  firestore: Did not find a Cloud Firestore rules file specified in a firebase.json config file. {"metadata":{"emulator":{"name":"firestore"},"message":"Did not find a Cloud Firestore rules file specified in a firebase.json config file."}}
+[warn] ⚠  firestore: The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration. {"metadata":{"emulator":{"name":"firestore"},"message":"The emulator will default to allowing all reads and writes. Learn more about this option: https://firebase.google.com/docs/emulator-suite/install_and_configure#security_rules_configuration."}}
+[debug] [2023-04-03T16:44:37.334Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-04-03T16:44:37.334Z] Ignoring unsupported arg: single_project_mode_error {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: single_project_mode_error"}}
+[debug] [2023-04-03T16:44:37.334Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","/home/dev/.cache/firebase/emulators/cloud-firestore-emulator-v1.16.0.jar","--host","127.0.0.1","--port",8080,"--websocket_port",9150,"--project_id","beatplace-app","--single_project_mode",true],"optionalArgs":["port","webchannel_port","host","rules","websocket_port","functions_emulator","seed_from_export","project_id","single_project_mode"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"/home/dev/.cache/firebase/emulators/cloud-firestore-emulator-v1.16.0.jar\",\"--host\",\"127.0.0.1\",\"--port\",8080,\"--websocket_port\",9150,\"--project_id\",\"beatplace-app\",\"--single_project_mode\",true],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"websocket_port\",\"functions_emulator\",\"seed_from_export\",\"project_id\",\"single_project_mode\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2023-04-03T16:44:39.631Z] Apr 03, 2023 5:44:39 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start
+INFO: Started WebSocket server on ws://127.0.0.1:9150
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 03, 2023 5:44:39 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketServer start\nINFO: Started WebSocket server on ws://127.0.0.1:9150\n"}}
+[debug] [2023-04-03T16:44:39.724Z] API endpoint: http://127.0.0.1:8080
+If you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:
+
+   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080
+
+Dev App Server is now running.
+
+ {"metadata":{"emulator":{"name":"firestore"},"message":"API endpoint: http://127.0.0.1:8080\nIf you are using a library that supports the FIRESTORE_EMULATOR_HOST environment variable, run:\n\n   export FIRESTORE_EMULATOR_HOST=127.0.0.1:8080\n\nDev App Server is now running.\n\n"}}
+[info] ✔  firestore: Firestore Emulator UI websocket is running on 9150. {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator UI websocket is running on 9150."}}
+[debug] [2023-04-03T16:44:53.831Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-04-03T16:44:53.832Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-04-03T16:44:53.832Z] Starting Emulator UI with command {"binary":"node","args":["/home/dev/.cache/firebase/emulators/ui-v1.11.4/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/dev/.cache/firebase/emulators/ui-v1.11.4/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-04-03T16:44:54.015Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-04-03T16:44:54.016Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ 127.0.0.1:9099 │ http://127.0.0.1:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ 127.0.0.1:8080 │ http://127.0.0.1:4000/firestore │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500, 9150
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-04-03T16:49:46.230Z] Apr 03, 2023 5:49:46 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel
+INFO: Connected to new websocket client
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 03, 2023 5:49:46 PM com.google.cloud.datastore.emulator.firestore.websocket.WebSocketChannelHandler initChannel\nINFO: Connected to new websocket client\n"}}
+[debug] [2023-04-03T16:49:46.255Z] Apr 03, 2023 5:49:46 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 03, 2023 5:49:46 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2023-04-03T16:49:46.315Z] Apr 03, 2023 5:49:46 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected non-HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 03, 2023 5:49:46 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected non-HTTP/2 connection.\n"}}
+[debug] [2023-04-03T16:49:46.981Z] Apr 03, 2023 5:49:46 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead
+INFO: Detected HTTP/2 connection.
+ {"metadata":{"emulator":{"name":"firestore"},"message":"Apr 03, 2023 5:49:46 PM io.gapi.emulators.netty.HttpVersionRoutingHandler channelRead\nINFO: Detected HTTP/2 connection.\n"}}
